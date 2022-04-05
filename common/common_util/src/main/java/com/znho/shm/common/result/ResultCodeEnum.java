@@ -33,15 +33,6 @@ public enum ResultCodeEnum {
 
     PAY_RUN(220, "支付中"),
     CANCEL_ORDER_FAIL(225, "取消订单失败"),
-    CANCEL_ORDER_NO(225, "不能取消预约"),
-
-    HOSCODE_EXIST(230, "医院编号已经存在"),
-    NUMBER_NO(240, "可预约号不足"),
-    TIME_NO(250, "当前时间不可以预约"),
-
-    SIGN_ERROR(300, "签名错误"),
-    HOSPITAL_OPEN(310, "医院未开通，暂时不能访问"),
-    HOSPITAL_LOCK(320, "医院被锁定，暂时不能访问"),
     ;
 
     private Integer code;
