@@ -11,4 +11,6 @@ public interface UserService extends IService<User> {
     //查询用户列表，带分页
     IPage<User> selectPage(Page<User> page, UserInfoQueryVo userInfoQueryVo);
 
+    String sendEmail(String to);
+
 }

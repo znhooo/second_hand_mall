@@ -11,5 +11,12 @@
 
     <artifactId>service_good</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.znho</groupId>
+            <artifactId>service_user_client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -1,4 +1,4 @@
-package com.znho.shm.config.common;
+package com.znho.shm.common.config;
 
 import com.google.common.base.Predicates;
 import org.springframework.context.annotation.Bean;

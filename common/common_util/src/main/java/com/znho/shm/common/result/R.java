@@ -47,12 +47,6 @@ public class R<T> {
         return R.ok(null);
     }
 
-    /**
-     * 操作成功
-     * @param data
-     * @param <T>
-     * @return
-     */
     public static<T> R<T> ok(T data){
         R<T> r = build(data);
         return build(data, ResultCodeEnum.SUCCESS);
@@ -62,12 +56,6 @@ public class R<T> {
         return R.fail(null);
     }
 
-    /**
-     * 操作失败
-     * @param data
-     * @param <T>
-     * @return
-     */
     public static<T> R<T> fail(T data){
         R<T> r = build(data);
         return build(data, ResultCodeEnum.FAIL);

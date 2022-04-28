@@ -15,6 +15,7 @@
         <module>service_user</module>
         <module>service_order</module>
         <module>service_good</module>
+        <module>service_dict</module>
     </modules>
 
     <dependencies>
@@ -57,10 +58,10 @@
             <optional>true</optional>
         </dependency>
         <!-- 服务调用feign -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!-- 服务注册 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -71,6 +72,20 @@
 <!--            <groupId>com.alibaba.cloud</groupId>-->
 <!--            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>-->
 <!--        </dependency>-->
+
+        <dependency>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

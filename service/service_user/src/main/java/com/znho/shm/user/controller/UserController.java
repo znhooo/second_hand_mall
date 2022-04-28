@@ -73,6 +73,6 @@ public class UserController {
     public R batchDeleteUser(@RequestBody List<Long> idList){
         userService.removeByIds(idList);
         return R.ok();
-
     }
+
 }

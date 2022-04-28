@@ -11,6 +11,10 @@
 
     <artifactId>service_client</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>service_user_client</module>
+        <module>service_good_client</module>
+    </modules>
 
     <dependencies>
         <dependency>

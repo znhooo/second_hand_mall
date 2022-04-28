@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.znho.shm.good.mapper.GoodMappper;
+import com.znho.shm.good.mapper.GoodMapper;
 import com.znho.shm.good.service.GoodService;
 import com.znho.shm.model.good.Good;
 import com.znho.shm.model.vo.GoodQueryVo;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 
 @Service
-public class GoodServiceImpl extends ServiceImpl<GoodMappper, Good> implements GoodService{
+public class GoodServiceImpl extends ServiceImpl<GoodMapper, Good> implements GoodService{
 
     @Override
     public IPage<Good> selectPage(Page<Good> goodPage, GoodQueryVo goodQueryVo) {

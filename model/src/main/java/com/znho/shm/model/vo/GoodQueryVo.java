@@ -13,6 +13,15 @@ public class GoodQueryVo {
     @ApiModelProperty("id")
     private Long id;
 
+    @ApiModelProperty("是否按时间排序")
+    private Boolean timeSort;
+
+    @ApiModelProperty("是否按价格降序")
+    private Boolean priceDescSort;
+
+    @ApiModelProperty("是否按价格升序")
+    private Boolean priceAscSort;
+
     @ApiModelProperty("关键词")
     private String keyword;
 
@@ -24,6 +33,7 @@ public class GoodQueryVo {
 
     @ApiModelProperty("状态")
     private Integer status;
+
 
     @ApiModelProperty("创建时间开始")
     @DateTimeFormat(pattern="yyyy-MM-dd")

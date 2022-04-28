@@ -2,6 +2,7 @@ package com.znho.shm.model.user;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.znho.shm.model.base.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -40,6 +41,11 @@ public class User extends BaseEntity {
     @ApiModelProperty("性别")
     @TableField("sex")
     private Integer sex;
+
+    @ApiModelProperty("生日")
+    @TableField("birth")
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Date birth;
 
     @ApiModelProperty("微信id")
     @TableField("wx_id")
